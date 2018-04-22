@@ -79,7 +79,7 @@ public class MatrixCompetent extends MatrixTelemetry{
 
         //Получаем конечный прогноз
         resultPredictJ= getPredictionOfI(mapOfMapOfCollumHints,mapOfCollumCompetents,resultDegree,iSkip);
-        System.out.println("Конечный прогноз по столбцам "+resultPredictJ+" c погрешностью "+jMistake);
+       // System.out.println("Конечный прогноз по столбцам "+resultPredictJ+" c погрешностью "+jMistake);
 
         //Получаем подсказки для строк
         Map<Integer,Map<Integer, Double>> mapOfMapOfRowHints = getMapOfRowHints(map,iSkip);
@@ -91,11 +91,11 @@ public class MatrixCompetent extends MatrixTelemetry{
 
         //Получаем конечный прогноз по строкам
         resultPredictI=getPredictionOfJ(mapOfMapOfRowHints,mapOfRowsCompetents,resultDegree, jSkip);
-        System.out.println("Конечный прогноз по строкам "+resultPredictI+" c погрешностью "+iMistake);
+        //System.out.println("Конечный прогноз по строкам "+resultPredictI+" c погрешностью "+iMistake);
 
         //Итог
-        double final1= getFinalPrediction1(resultPredictJ,resultPredictI);
-        System.out.println("FINAL1 = "+final1);
+        double final1= getFinalPrediction2(resultPredictJ,resultPredictI);
+       // System.out.println("FINAL1 = "+final1);
         //System.out.println("FINAL2 = "+getFinalPrediction2(resultPredictJ,resultPredictI));
 
         return final1;

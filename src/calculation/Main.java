@@ -2,6 +2,11 @@ package calculation;
 
 import parse.ReadSimpleData;
 import parse.ReadTelemetryData;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.*;
 
 import matrix.*;
@@ -24,16 +29,19 @@ public class Main {
     public static MatrixCompetent matrixCompetent;
     public static MatrixCompetent matrixCompetentMap;
 
+    public static MatrixTelemetry resultMatrix;
+    public static int quantityMiss = 300;
+
     public static void main(String[] args) {
 
-        ReadSimpleData inputFileTXT = new ReadSimpleData("C:/Users/Don_Toton/Desktop/mapZet.txt");
+        ReadSimpleData inputFileTXT = new ReadSimpleData("C:/Users/Don_Toton/Desktop/mapZetMini.txt");
         matrixTelemetry = inputFileTXT.getInitalMatrix();
         mapTelemetry =inputFileTXT.getMapMatrix();
 
 
-        /*
+
         //создаем исходную матрицу значений и карту пропусков, указав путь файла с данными телеметрии
-        inputFile = new ReadTelemetryData("pathFile");
+        /*inputFile = new ReadTelemetryData(pathFile);
         matrixTelemetry = inputFile.getInitalMatrix();
         mapTelemetry=inputFile.getMapMatrix();*/
 
@@ -42,12 +50,18 @@ public class Main {
          System.out.println("--------------------------------------------------------------------------------------------------------------------");
         mapTelemetry.show();
 
-        //нормализация по дисперсии матрицы значений
-/*
-        matrixTelemetry.normalizeByDispersion(mapTelemetry);
-        System.out.println("Нормализованная по дисперсии");
-        matrixTelemetry.show();*/
+        System.out.println("------------------------------------------------------------------------------------------------------------------");
+        //spoilInputMatrix(quantityMiss, inputFileTXT.numberOfRows, inputFileTXT.numberOfCollums);
+        loadMatrixMap("C:/Users/Don_Toton/Desktop/chit.txt");
+        mapTelemetry.show();
 
+
+        //нормализация по дисперсии матрицы значений
+
+      /*  matrixTelemetry.normalizeByDispersion(mapTelemetry);
+        System.out.println("Нормализованная по дисперсии");
+        matrixTelemetry.show();
+*/
 
         //получаем колонки с нулевыми дисперсиями
         for (int j = 0; j <matrixTelemetry.N ; j++)
@@ -57,7 +71,7 @@ public class Main {
         System.out.println();
 
         //создаем результирующую матрицу и ее карту (матрица, которая будет содержать восстановленные значени)
-        MatrixTelemetry resultMatrix = new MatrixTelemetry(matrixTelemetry.M,matrixTelemetry.N);
+        resultMatrix = new MatrixTelemetry(matrixTelemetry.M,matrixTelemetry.N);
         MatrixTelemetry resultMap = new MatrixTelemetry(matrixTelemetry.M,matrixTelemetry.N);
 
         //Перебираем все элементы с пропусками
@@ -68,34 +82,101 @@ public class Main {
                 if (mapTelemetry.get(i,j)==1) {
 
                     //создание компетентной матрицы для конкретного пропуска и его предсказание (в случае успешного создания)
-                    System.out.println("получаем компетентную матрицу для элемента ["+i+"] ["+j+"]");
+                    //System.out.println("получаем компетентную матрицу для элемента ["+i+"] ["+j+"]");
                     if (getCompetentMatrix(matrixTelemetry, mapTelemetry, i, j)) {
 
                         resultMatrix.set(i, j, matrixCompetent.resultPrediction(matrixCompetentMap));
                         resultMap.set(i,j,1);
                     }
-                    System.out.println();
+                    //System.out.println();
                 }
             }
         }// 4 32 пропускаем одну строку
+
+
+
+       /* System.out.println("Умножаем на дисперсию");
+        matrixTelemetry.deNormalizeByDispersion(mapTelemetry);
+        matrixTelemetry.show()*/;
 
         System.out.println("Значения");
         resultMatrix.show();
         System.out.println("Карта");
         resultMap.show();
 
+
+        double error =calculateResultError(matrixTelemetry,resultMatrix,resultMap);
+
         //вставка восстановленных значений в исходную матрицу
         insert(resultMatrix, resultMap, matrixTelemetry);
         System.out.println("Результат работы программы");
         matrixTelemetry.show();
 
+        System.out.println("[финальная погрешность]"+error);
+    }
 
-        /*
-        System.out.println("Умножаем на дисперсию");
-        matrixTelemetry.deNormalizeByDispersion(mapTelemetry);
-        matrixTelemetry.show();*/
+    public static double calculateResultError( MatrixTelemetry inital, MatrixTelemetry matrix, MatrixTelemetry map){
+        double error=0,temp;
+        for (int i = 0; i <inital.M ; i++) {
+            for (int j = 0; j < inital.N; j++) {
+                if (map.get(i,j)==1) {
+                    if (inital.get(i,j)!=0) {
+                        temp = Math.abs((inital.get(i, j) - matrix.get(i, j)) / inital.get(i, j));
+                        error+=temp;
+                        System.out.println("i= "+i+" j= "+j+" error= "+temp);
+                    } else {
+                        temp =  Math.abs(inital.get(i, j) - matrix.get(i, j));
+                        error+=temp;
+                        System.out.println("[0] error= "+temp);
+                    }
+                }
+            }
+        }
+
+        return error/quantityMiss;
+    }
+
+    public static void loadMatrixMap(String path){
+        StringBuilder dataFromFile = new StringBuilder();
+        String s,inputSimpleData=null;
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(path)))){
+            while ((s=reader.readLine())!=null){
+                dataFromFile.append(s).append("\n");
+            }
+          inputSimpleData=dataFromFile.toString();
+
+        }catch (IOException e){
+            System.out.println("Файл не найден");
+        }
+        String[] arrayOfRow= inputSimpleData.split("\n");
+        for (int i = 0; i <arrayOfRow.length ; i++) {
+
+            String newRow = arrayOfRow[i].replace(",",".");
+            String dataInOneRow []= newRow.split("\\s+");
+            for (int j = 0; j <dataInOneRow.length ; j++) {
+                 mapTelemetry.set(i,j,Double.parseDouble(dataInOneRow[j]));
+            }
+        }
+    }
 
 
+    public static void spoilInputMatrix(int quantitySpoilt, int quantityOfRows, int quantityOfCollums){
+        int count = 0;
+        int i,j;
+        while (count<quantitySpoilt){
+//            i = (int) ((Math.random()*1000) % mapTelemetry.M);
+//            j = (int) ((Math.random()*1000) % mapTelemetry.N);
+            i = (int) (Math.random()* (quantityOfRows));
+            j = (int) (Math.random()*(quantityOfCollums));
+
+            if (j==55) continue;
+
+            if (mapTelemetry.get(i,j)!=1) {
+                mapTelemetry.set(i, j, 1);
+                count++;
+              //  System.out.println("i= "+i+" j="+j);
+            }
+        }
     }
     
     public static void insert( MatrixTelemetry resultMatrix,MatrixTelemetry resultMap,MatrixTelemetry matrixTelemetry ){
@@ -111,13 +192,15 @@ public class Main {
 
         //если дисперсия столбца восстанавливаемого пропуска=0, то не обрабатываем его
         if (listOfZeroDispersion.indexOf(jSkip)!=-1) {
-            System.out.println("Дисперсия столбца восстанавлимаемого пропуска =0 ");
+            double avarage = matrixTelemetry.getAverageCollum(map,jSkip);
+            resultMatrix.set(iSkip,jSkip,avarage);
+           //System.out.println("Дисперсия столбца восстанавлимаемого пропуска =0 ");
             return false;
         }
 
         //задаем диапазон поиска компетентный строк
-        int searchRange=4; //количество строк сверху и снизу для поиска компетентных строк; если 4, то всего 8
-        int competentRows=7, competentCollum=7;
+        int searchRange=5; //количество строк сверху и снизу для поиска компетентных строк; если 4, то всего 8
+        int competentRows=4, competentCollum=4;
 
         //предотвращаем выход за диапазон матрицы
         int topBorder=0, bottomBorder=0, temp;
@@ -200,9 +283,9 @@ public class Main {
                 listOfDepricateCollum.add(j);
             }
         }
-        System.out.println("Нежелательные столбцы компетентной матрицы ");
-        for (Integer i: listOfDepricateCollum) System.out.print(i+" ");
-        System.out.println();
+//        System.out.println("Нежелательные столбцы компетентной матрицы ");
+//        for (Integer i: listOfDepricateCollum) System.out.print(i+" ");
+//        System.out.println();
 
 
         // получаем карту <Индекс, Значение> компетентностей столбцов                                         !CHEKED+!
@@ -251,8 +334,8 @@ public class Main {
         matrixCompetentCollumMap.numeration=selectedRow;
 
         //внесение в объекты матриц названий столбцов для удобного вывода
-        matrixCompetentCollum.setCaptions(selectedCollum);
-        matrixCompetentCollumMap.setCaptions(selectedCollum);
+        //matrixCompetentCollum.setCaptions(selectedCollum);
+        //matrixCompetentCollumMap.setCaptions(selectedCollum);
 
         //копирование указанного списка индексов столбцов в новую матрицу
         matrixCompetentCollum.copyCollum(matrixCompetentRows,selectedCollum);
@@ -262,7 +345,7 @@ public class Main {
         matrixCompetentCollum.setCompetents(competentOfCollumOfCompetentMatrix,competentOfRowsOfCompetentMatrix);
 
         //вывод матриц на экран
-         matrixCompetentCollum.show();
+         //matrixCompetentCollum.show();
          // matrixCompetentCollumMap.show();
 
         ////внесение в объекты матриц измененных коордиат пропуска

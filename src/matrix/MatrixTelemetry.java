@@ -56,9 +56,9 @@ public class MatrixTelemetry extends Matrix {
             disperse=getDespersionCollum(map,j);
             listOfDispersion.add(disperse);
             //disperse= BigDecimal.valueOf(disperse).setScale(15,BigDecimal.ROUND_HALF_DOWN).doubleValue();
-            if (disperse==0) continue;
             average=getAverageCollum(map,j);
             listOfAvarage.add(average);
+            if (disperse==0) continue;
 
             //делим каждый элеметн столбца на дисперсию
             for (int i = 0; i < M; i++) {

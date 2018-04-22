@@ -14,6 +14,7 @@ public class ReadSimpleData {
     public String inputSimpleData;
     public String pathOfData;
     public int numberOfRows=0;
+    public int numberOfCollums;
     private MatrixTelemetry initalMatrix;
     private MatrixTelemetry mapMatrix;
 
@@ -41,6 +42,7 @@ public class ReadSimpleData {
         }
 
         int N = checkQuantityCollum (arrayOfRow[0]);
+        numberOfCollums=N;
         initalMatrix = new MatrixTelemetry(numberOfRows,N);
         mapMatrix = new MatrixTelemetry(numberOfRows,N);
 
