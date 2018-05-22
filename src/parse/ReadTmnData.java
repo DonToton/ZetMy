@@ -4,8 +4,12 @@ import matrix.MatrixTelemetry;
 
 import java.io.*;
 
+/*
+    Класс, предназначенный для парсинга данных телеметрии
+    из файла с форматом .TMN
+ */
 
-public class ReadTelemetryData {
+public class ReadTmnData {
 
     public String inputTelemetryData;
     public String pathOfData;
@@ -13,7 +17,7 @@ public class ReadTelemetryData {
     private MatrixTelemetry initalMatrix;
     private MatrixTelemetry mapMatrix;
 
-    public ReadTelemetryData(String pathOfData){
+    public ReadTmnData(String pathOfData){
         this.pathOfData = pathOfData;
         readData(pathOfData);
     }

@@ -8,8 +8,12 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/*
+    Класс, предназначенный для парсинга данных телеметрии
+    из файла формата .TXT
+ */
 
-public class ReadSimpleData {
+public class ReadTxtData {
 
     public String inputSimpleData;
     public String pathOfData;
@@ -18,7 +22,7 @@ public class ReadSimpleData {
     private MatrixTelemetry initalMatrix;
     private MatrixTelemetry mapMatrix;
 
-    public ReadSimpleData(String pathOfData){
+    public ReadTxtData(String pathOfData){
         this.pathOfData = pathOfData;
         readData(pathOfData);
     }

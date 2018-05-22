@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="82d3def1-2d3c-47be-a087-9636185bda7c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ZetAlgorithm.iml" afterPath="$PROJECT_DIR$/ZetAlgorithm.iml" />
-      <change beforePath="$PROJECT_DIR$/out/production/ZetAlgorithm/calculation/Main.class" afterPath="$PROJECT_DIR$/out/production/ZetAlgorithm/calculation/Main.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/ZetAlgorithm/parse/ReadSimpleData.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/ZetAlgorithm/parse/ReadTelemetryData.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/calculation/Main.java" afterPath="$PROJECT_DIR$/src/calculation/Main.java" />
+      <change beforePath="$PROJECT_DIR$/src/parse/ReadSimpleData.java" afterPath="$PROJECT_DIR$/src/parse/ReadTxtData.java" />
+      <change beforePath="$PROJECT_DIR$/src/parse/ReadTelemetryData.java" afterPath="$PROJECT_DIR$/src/parse/ReadTmnData.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,24 +43,12 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/calculation/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-81">
-              <caret line="29" column="50" lean-forward="true" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+            <state relative-caret-position="323">
+              <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getIndexOfDepricateCollum#0;class#Main#0" expanded="false" />
-                <marker date="1527011924032" expanded="true" signature="3347:3598" ph="..." />
-                <marker date="1527011924032" expanded="true" signature="3352:3564" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Graph.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/form/Graph.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1972">
-              <caret line="139" column="35" lean-forward="true" selection-start-line="139" selection-start-column="35" selection-end-line="139" selection-end-column="35" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -97,9 +87,15 @@
       <find>System.out.println()</find>
       <find>listOfDispersion</find>
       <find>startMatrix</find>
+      <find>mapTelemetry</find>
+      <find>resultMatrix</find>
+      <find>finalMatrix</find>
     </findStrings>
     <replaceStrings>
       <replace>startMatrix</replace>
+      <replace>mapStartMatrix</replace>
+      <replace>reconstructedMatrix</replace>
+      <replace>resultMatrix</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -118,7 +114,6 @@
         <option value="$PROJECT_DIR$/src/chart/DrawingChart.java" />
         <option value="$PROJECT_DIR$/src/calculation/MatrixTelemetryFormat.java" />
         <option value="$PROJECT_DIR$/src/parse/ParseTelemetryData.java" />
-        <option value="$PROJECT_DIR$/src/parse/ReadTelemetryData.java" />
         <option value="$PROJECT_DIR$/src/calculation/Matrix.java" />
         <option value="$PROJECT_DIR$/src/calculation/MatrixTelemetry.java" />
         <option value="$PROJECT_DIR$/src/calculation/MatrixCompetent.java" />
@@ -128,6 +123,9 @@
         <option value="$PROJECT_DIR$/src/matrix/MatrixTelemetry.java" />
         <option value="$PROJECT_DIR$/src/matrix/MatrixCompetent.java" />
         <option value="$PROJECT_DIR$/src/form/Graph.java" />
+        <option value="$PROJECT_DIR$/src/parse/ReadTelemetryData.java" />
+        <option value="$PROJECT_DIR$/src/parse/ReadTmnData.java" />
+        <option value="$PROJECT_DIR$/src/parse/ReadTxtData.java" />
         <option value="$PROJECT_DIR$/src/calculation/Main.java" />
       </list>
     </option>
@@ -138,7 +136,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="156" />
     <option name="y" value="128" />
     <option name="width" value="768" />
@@ -232,7 +230,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/jfreechart-1.0.19.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ZetAlgorithmOleg" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -449,8 +447,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -460,7 +457,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36672327" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53480476" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -537,8 +534,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getIndexOfDepricateCollum#0;class#Main#0" expanded="false" />
-            <marker date="1527011924032" expanded="true" signature="3347:3598" ph="..." />
-            <marker date="1527011924032" expanded="true" signature="3352:3564" ph="..." />
           </folding>
         </state>
       </provider>
@@ -638,8 +633,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getIndexOfDepricateCollum#0;class#Main#0" expanded="false" />
-            <marker date="1527011924032" expanded="true" signature="3347:3598" ph="..." />
-            <marker date="1527011924032" expanded="true" signature="3352:3564" ph="..." />
           </folding>
         </state>
       </provider>
@@ -699,13 +692,11 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getIndexOfDepricateCollum#0;class#Main#0" expanded="false" />
-            <marker date="1527011924032" expanded="true" signature="3347:3598" ph="..." />
-            <marker date="1527011924032" expanded="true" signature="3352:3564" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/parse/ReadTelemetryData.java">
+    <entry file="file://$PROJECT_DIR$/src/parse/ReadTmnData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="952">
           <caret line="59" column="54" lean-forward="false" selection-start-line="59" selection-start-column="54" selection-end-line="59" selection-end-column="54" />
@@ -747,13 +738,11 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getIndexOfDepricateCollum#0;class#Main#0" expanded="false" />
-            <marker date="1527011924032" expanded="true" signature="3347:3598" ph="..." />
-            <marker date="1527011924032" expanded="true" signature="3352:3564" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/parse/ReadTelemetryData.java">
+    <entry file="file://$PROJECT_DIR$/src/parse/ReadTmnData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
@@ -795,13 +784,11 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getIndexOfDepricateCollum#0;class#Main#0" expanded="false" />
-            <marker date="1527011924032" expanded="true" signature="3347:3598" ph="..." />
-            <marker date="1527011924032" expanded="true" signature="3352:3564" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/parse/ReadTelemetryData.java">
+    <entry file="file://$PROJECT_DIR$/src/parse/ReadTmnData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
@@ -823,8 +810,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getIndexOfDepricateCollum#0;class#Main#0" expanded="false" />
-            <marker date="1527011924032" expanded="true" signature="3347:3598" ph="..." />
-            <marker date="1527011924032" expanded="true" signature="3352:3564" ph="..." />
           </folding>
         </state>
       </provider>
@@ -849,7 +834,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/parse/ReadTelemetryData.java">
+    <entry file="file://$PROJECT_DIR$/src/parse/ReadTmnData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -865,7 +850,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/parse/ParseTelemetryData.java" />
-    <entry file="file://$PROJECT_DIR$/src/parse/ReadTelemetryData.java">
+    <entry file="file://$PROJECT_DIR$/src/parse/ReadTmnData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -882,7 +867,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/parse/ParseTelemetryData.java" />
-    <entry file="file://$PROJECT_DIR$/src/parse/ReadTelemetryData.java">
+    <entry file="file://$PROJECT_DIR$/src/parse/ReadTmnData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="31" lean-forward="false" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
@@ -898,7 +883,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/parse/ParseTelemetryData.java" />
-    <entry file="file://$PROJECT_DIR$/src/parse/ReadTelemetryData.java">
+    <entry file="file://$PROJECT_DIR$/src/parse/ReadTmnData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="31" lean-forward="true" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
@@ -945,26 +930,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/parse/ReadTelemetryData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="28" column="33" lean-forward="false" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="428" column="0" lean-forward="false" selection-start-line="428" selection-start-column="0" selection-end-line="428" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/parse/ReadSimpleData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="67" column="36" lean-forward="true" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -997,6 +966,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/parse/ReadTxtData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/matrix/MatrixCompetent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="545">
@@ -1016,23 +993,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/parse/ReadTmnData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-500">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2247#2248#0" expanded="true" />
+            <element signature="e#2282#2283#0" expanded="true" />
+            <element signature="e#2327#2328#0" expanded="true" />
+            <element signature="e#2359#2360#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/form/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1972">
-          <caret line="139" column="35" lean-forward="true" selection-start-line="139" selection-start-column="35" selection-end-line="139" selection-end-column="35" />
+        <state relative-caret-position="170">
+          <caret line="21" column="40" lean-forward="false" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/calculation/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81">
-          <caret line="29" column="50" lean-forward="true" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+        <state relative-caret-position="323">
+          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getIndexOfDepricateCollum#0;class#Main#0" expanded="false" />
-            <marker date="1527011924032" expanded="true" signature="3347:3598" ph="..." />
-            <marker date="1527011924032" expanded="true" signature="3352:3564" ph="..." />
           </folding>
         </state>
       </provider>
