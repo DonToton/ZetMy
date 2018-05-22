@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="82d3def1-2d3c-47be-a087-9636185bda7c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/ZetAlgorithm.iml" afterPath="$PROJECT_DIR$/ZetAlgorithm.iml" />
       <change beforePath="$PROJECT_DIR$/out/production/ZetAlgorithm/calculation/Main.class" afterPath="$PROJECT_DIR$/out/production/ZetAlgorithm/calculation/Main.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/ZetAlgorithm/parse/ReadSimpleData.class" afterPath="$PROJECT_DIR$/out/production/ZetAlgorithm/parse/ReadSimpleData.class" />
       <change beforePath="$PROJECT_DIR$/src/calculation/Main.java" afterPath="$PROJECT_DIR$/src/calculation/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/matrix/MatrixCompetent.java" afterPath="$PROJECT_DIR$/src/matrix/MatrixCompetent.java" />
-      <change beforePath="$PROJECT_DIR$/src/matrix/MatrixTelemetry.java" afterPath="$PROJECT_DIR$/src/matrix/MatrixTelemetry.java" />
-      <change beforePath="$PROJECT_DIR$/src/parse/ReadSimpleData.java" afterPath="$PROJECT_DIR$/src/parse/ReadSimpleData.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,10 +20,9 @@
       <file leaf-file-name="MatrixCompetent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/matrix/MatrixCompetent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+            <state relative-caret-position="545">
+              <caret line="405" column="0" lean-forward="true" selection-start-line="405" selection-start-column="0" selection-end-line="405" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="method#setISkipJSkip#0;class#MatrixCompetent#0" expanded="false" />
                 <element signature="method#getMapOfCollumHints#0;class#MatrixCompetent#0" expanded="false" />
                 <element signature="method#getMapOfCollumHints#1;class#MatrixCompetent#0" expanded="false" />
@@ -45,14 +41,24 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/calculation/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="211" column="37" lean-forward="true" selection-start-line="211" selection-start-column="37" selection-end-line="211" selection-end-column="37" />
+            <state relative-caret-position="-81">
+              <caret line="29" column="50" lean-forward="true" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getIndexOfDepricateCollum#0;class#Main#0" expanded="false" />
-                <marker date="1524424573300" expanded="true" signature="3062:3313" ph="..." />
-                <marker date="1524424573300" expanded="true" signature="3067:3279" ph="..." />
+                <marker date="1527011924032" expanded="true" signature="3347:3598" ph="..." />
+                <marker date="1527011924032" expanded="true" signature="3352:3564" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Graph.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/form/Graph.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1972">
+              <caret line="139" column="35" lean-forward="true" selection-start-line="139" selection-start-column="35" selection-end-line="139" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -90,7 +96,11 @@
       <find>Нежелательные столбцы компетентной матрицы</find>
       <find>System.out.println()</find>
       <find>listOfDispersion</find>
+      <find>startMatrix</find>
     </findStrings>
+    <replaceStrings>
+      <replace>startMatrix</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -117,6 +127,7 @@
         <option value="$PROJECT_DIR$/src/parse/ReadSimpleData.java" />
         <option value="$PROJECT_DIR$/src/matrix/MatrixTelemetry.java" />
         <option value="$PROJECT_DIR$/src/matrix/MatrixCompetent.java" />
+        <option value="$PROJECT_DIR$/src/form/Graph.java" />
         <option value="$PROJECT_DIR$/src/calculation/Main.java" />
       </list>
     </option>
@@ -127,7 +138,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="156" />
     <option name="y" value="128" />
     <option name="width" value="768" />
@@ -165,13 +176,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="ZetAlgorithm" type="b2602c69:ProjectViewProjectNode" />
               <item name="ZetAlgorithm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZetAlgorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZetAlgorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ZetAlgorithm" type="b2602c69:ProjectViewProjectNode" />
@@ -183,6 +199,12 @@
               <item name="ZetAlgorithm" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="calculation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZetAlgorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZetAlgorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="form" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ZetAlgorithm" type="b2602c69:ProjectViewProjectNode" />
@@ -200,48 +222,29 @@
               <item name="ZetAlgorithm" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
-            <path>
-              <item name="ZetAlgorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="ZetAlgorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ZetAlgorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ZetAlgorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/jfreechart-1.0.19.jar!/" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="form" />
       <recent name="parse" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\Don_Toton\IdeaProjects\ZetAlgorithm" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -446,7 +449,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -456,17 +460,17 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29711375" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36672327" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22239032" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21028744" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44142616" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08998302" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -517,7 +521,7 @@
           <option name="timeStamp" value="52" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="53" />
+      <option name="time" value="59" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -526,14 +530,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/matrix/Matrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3587">
-          <caret line="211" column="9" lean-forward="false" selection-start-line="211" selection-start-column="9" selection-end-line="211" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/calculation/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1921">
@@ -541,8 +537,8 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getIndexOfDepricateCollum#0;class#Main#0" expanded="false" />
-            <marker date="1524424573300" expanded="true" signature="3062:3313" ph="..." />
-            <marker date="1524424573300" expanded="true" signature="3067:3279" ph="..." />
+            <marker date="1527011924032" expanded="true" signature="3347:3598" ph="..." />
+            <marker date="1527011924032" expanded="true" signature="3352:3564" ph="..." />
           </folding>
         </state>
       </provider>
@@ -572,7 +568,7 @@
         <state relative-caret-position="153">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#setISkipJSkip#0;class#MatrixCompetent#0" expanded="false" />
             <element signature="method#getMapOfCollumHints#0;class#MatrixCompetent#0" expanded="false" />
             <element signature="method#getMapOfCollumHints#1;class#MatrixCompetent#0" expanded="false" />
@@ -600,7 +596,7 @@
         <state relative-caret-position="204">
           <caret line="12" column="41" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="41" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#setISkipJSkip#0;class#MatrixCompetent#0" expanded="false" />
             <element signature="method#getMapOfCollumHints#0;class#MatrixCompetent#0" expanded="false" />
             <element signature="method#getMapOfCollumHints#1;class#MatrixCompetent#0" expanded="false" />
@@ -642,8 +638,8 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getIndexOfDepricateCollum#0;class#Main#0" expanded="false" />
-            <marker date="1524424573300" expanded="true" signature="3062:3313" ph="..." />
-            <marker date="1524424573300" expanded="true" signature="3067:3279" ph="..." />
+            <marker date="1527011924032" expanded="true" signature="3347:3598" ph="..." />
+            <marker date="1527011924032" expanded="true" signature="3352:3564" ph="..." />
           </folding>
         </state>
       </provider>
@@ -661,7 +657,7 @@
         <state relative-caret-position="204">
           <caret line="12" column="41" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="41" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#setISkipJSkip#0;class#MatrixCompetent#0" expanded="false" />
             <element signature="method#getMapOfCollumHints#0;class#MatrixCompetent#0" expanded="false" />
             <element signature="method#getMapOfCollumHints#1;class#MatrixCompetent#0" expanded="false" />
@@ -703,8 +699,8 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getIndexOfDepricateCollum#0;class#Main#0" expanded="false" />
-            <marker date="1524424573300" expanded="true" signature="3062:3313" ph="..." />
-            <marker date="1524424573300" expanded="true" signature="3067:3279" ph="..." />
+            <marker date="1527011924032" expanded="true" signature="3347:3598" ph="..." />
+            <marker date="1527011924032" expanded="true" signature="3352:3564" ph="..." />
           </folding>
         </state>
       </provider>
@@ -751,8 +747,8 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getIndexOfDepricateCollum#0;class#Main#0" expanded="false" />
-            <marker date="1524424573300" expanded="true" signature="3062:3313" ph="..." />
-            <marker date="1524424573300" expanded="true" signature="3067:3279" ph="..." />
+            <marker date="1527011924032" expanded="true" signature="3347:3598" ph="..." />
+            <marker date="1527011924032" expanded="true" signature="3352:3564" ph="..." />
           </folding>
         </state>
       </provider>
@@ -799,8 +795,8 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getIndexOfDepricateCollum#0;class#Main#0" expanded="false" />
-            <marker date="1524424573300" expanded="true" signature="3062:3313" ph="..." />
-            <marker date="1524424573300" expanded="true" signature="3067:3279" ph="..." />
+            <marker date="1527011924032" expanded="true" signature="3347:3598" ph="..." />
+            <marker date="1527011924032" expanded="true" signature="3352:3564" ph="..." />
           </folding>
         </state>
       </provider>
@@ -827,8 +823,8 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getIndexOfDepricateCollum#0;class#Main#0" expanded="false" />
-            <marker date="1524424573300" expanded="true" signature="3062:3313" ph="..." />
-            <marker date="1524424573300" expanded="true" signature="3067:3279" ph="..." />
+            <marker date="1527011924032" expanded="true" signature="3347:3598" ph="..." />
+            <marker date="1527011924032" expanded="true" signature="3352:3564" ph="..." />
           </folding>
         </state>
       </provider>
@@ -957,16 +953,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/parse/ReadSimpleData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="67" column="36" lean-forward="true" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -975,9 +961,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/parse/ReadSimpleData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="67" column="36" lean-forward="true" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/matrix/MatrixTelemetry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="832">
+        <state relative-caret-position="969">
           <caret line="59" column="39" lean-forward="true" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -997,7 +991,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/matrix/Matrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
+        <state relative-caret-position="-167">
           <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
         </state>
@@ -1005,10 +999,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/matrix/MatrixCompetent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+        <state relative-caret-position="545">
+          <caret line="405" column="0" lean-forward="true" selection-start-line="405" selection-start-column="0" selection-end-line="405" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#setISkipJSkip#0;class#MatrixCompetent#0" expanded="false" />
             <element signature="method#getMapOfCollumHints#0;class#MatrixCompetent#0" expanded="false" />
             <element signature="method#getMapOfCollumHints#1;class#MatrixCompetent#0" expanded="false" />
@@ -1023,18 +1016,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/form/Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1972">
+          <caret line="139" column="35" lean-forward="true" selection-start-line="139" selection-start-column="35" selection-end-line="139" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/calculation/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="211" column="37" lean-forward="true" selection-start-line="211" selection-start-column="37" selection-end-line="211" selection-end-column="37" />
+        <state relative-caret-position="-81">
+          <caret line="29" column="50" lean-forward="true" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getIndexOfDepricateCollum#0;class#Main#0" expanded="false" />
-            <marker date="1524424573300" expanded="true" signature="3062:3313" ph="..." />
-            <marker date="1524424573300" expanded="true" signature="3067:3279" ph="..." />
+            <marker date="1527011924032" expanded="true" signature="3347:3598" ph="..." />
+            <marker date="1527011924032" expanded="true" signature="3352:3564" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>ZetAlgorithm</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

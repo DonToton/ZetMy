@@ -1,5 +1,6 @@
 package calculation;
 
+import form.Graph;
 import parse.ReadSimpleData;
 import parse.ReadTelemetryData;
 
@@ -29,7 +30,10 @@ public class Main {
     public static MatrixCompetent matrixCompetent;
     public static MatrixCompetent matrixCompetentMap;
 
+    //матрица, содержащая только восстановленные значения
     public static MatrixTelemetry resultMatrix;
+    //итоговая матрица (содержит исходные значения + дополнена восстановленными)
+    public static MatrixTelemetry finalMatrix;
     public static int quantityMiss = 300;
 
     public static void main(String[] args) {
@@ -72,6 +76,7 @@ public class Main {
 
         //создаем результирующую матрицу и ее карту (матрица, которая будет содержать восстановленные значени)
         resultMatrix = new MatrixTelemetry(matrixTelemetry.M,matrixTelemetry.N);
+        finalMatrix = new MatrixTelemetry(matrixTelemetry.M,matrixTelemetry.N);
         MatrixTelemetry resultMap = new MatrixTelemetry(matrixTelemetry.M,matrixTelemetry.N);
 
         //Перебираем все элементы с пропусками
@@ -100,18 +105,22 @@ public class Main {
         matrixTelemetry.show()*/;
 
         System.out.println("Значения");
-        resultMatrix.show();
+        //resultMatrix.show();
         System.out.println("Карта");
-        resultMap.show();
+       // resultMap.show();
 
 
         double error =calculateResultError(matrixTelemetry,resultMatrix,resultMap);
 
         //вставка восстановленных значений в исходную матрицу
         insert(resultMatrix, resultMap, matrixTelemetry);
-        System.out.println("Результат работы программы");
+        System.out.println("ResultMatrix:");
         matrixTelemetry.show();
+        System.out.println("Результат работы программы");
+        finalMatrix.show();
 
+        Graph graph = new Graph(matrixTelemetry,mapTelemetry, finalMatrix);
+        graph.setVisible(true);
         System.out.println("[финальная погрешность]"+error);
     }
 
@@ -182,7 +191,8 @@ public class Main {
     public static void insert( MatrixTelemetry resultMatrix,MatrixTelemetry resultMap,MatrixTelemetry matrixTelemetry ){
         for (int i = 0; i <matrixTelemetry.M ; i++) {
             for (int j = 0; j < matrixTelemetry.N; j++) {
-                if (resultMap.get(i,j)==1) matrixTelemetry.set(i,j,resultMatrix.get(i,j));
+                if (resultMap.get(i,j)==1) finalMatrix.set(i,j,resultMatrix.get(i,j));
+                else finalMatrix.set(i,j,matrixTelemetry.get(i,j));
             }
         }
     }
