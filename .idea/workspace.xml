@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="82d3def1-2d3c-47be-a087-9636185bda7c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/ZetAlgorithm/parse/ReadSimpleData.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/ZetAlgorithm/parse/ReadTelemetryData.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/calculation/Main.java" afterPath="$PROJECT_DIR$/src/calculation/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/parse/ReadSimpleData.java" afterPath="$PROJECT_DIR$/src/parse/ReadTxtData.java" />
-      <change beforePath="$PROJECT_DIR$/src/parse/ReadTelemetryData.java" afterPath="$PROJECT_DIR$/src/parse/ReadTmnData.java" />
+      <change beforePath="$PROJECT_DIR$/out/production/ZetAlgorithm/form/Graph$1.class" afterPath="$PROJECT_DIR$/out/production/ZetAlgorithm/form/Graph$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/ZetAlgorithm/form/Graph.class" afterPath="$PROJECT_DIR$/out/production/ZetAlgorithm/form/Graph.class" />
+      <change beforePath="$PROJECT_DIR$/src/form/Graph.java" afterPath="$PROJECT_DIR$/src/form/Graph.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +20,8 @@
       <file leaf-file-name="MatrixCompetent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/matrix/MatrixCompetent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="405" column="0" lean-forward="true" selection-start-line="405" selection-start-column="0" selection-end-line="405" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="405" column="0" lean-forward="false" selection-start-line="405" selection-start-column="0" selection-end-line="405" selection-end-column="0" />
               <folding>
                 <element signature="method#setISkipJSkip#0;class#MatrixCompetent#0" expanded="false" />
                 <element signature="method#getMapOfCollumHints#0;class#MatrixCompetent#0" expanded="false" />
@@ -40,14 +38,50 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/calculation/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+            <state relative-caret-position="187">
+              <caret line="51" column="31" lean-forward="true" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getIndexOfDepricateCollum#0;class#Main#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Graph.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/form/Graph.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="96" column="58" lean-forward="true" selection-start-line="96" selection-start-column="58" selection-end-line="96" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#6240#6241#0" expanded="true" />
+                <element signature="e#6300#6301#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MatrixTelemetry.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/matrix/MatrixTelemetry.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#980#981#0" expanded="true" />
+                <element signature="e#1006#1007#0" expanded="true" />
+                <element signature="method#getAverageX2Collum#0;class#MatrixTelemetry#0" expanded="false" />
+                <element signature="method#getAverageXYCollum#0;class#MatrixTelemetry#0" expanded="false" />
+                <element signature="method#getCompetentOfCollum#0;class#MatrixTelemetry#0" expanded="false" />
+                <element signature="method#getCompetentOfCollum#1;class#MatrixTelemetry#0" expanded="false" />
+                <element signature="method#getDespersionRow#0;class#MatrixTelemetry#0" expanded="false" />
+                <element signature="method#getAverageRow#0;class#MatrixTelemetry#0" expanded="false" />
+                <element signature="method#getAverageX2Row#0;class#MatrixTelemetry#0" expanded="false" />
+                <element signature="method#getAverageXYRow#0;class#MatrixTelemetry#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -90,6 +124,10 @@
       <find>mapTelemetry</find>
       <find>resultMatrix</find>
       <find>finalMatrix</find>
+      <find>rangeAxis</find>
+      <find>DefaultCategoryDataset</find>
+      <find>col</find>
+      <find>NumberAxis</find>
     </findStrings>
     <replaceStrings>
       <replace>startMatrix</replace>
@@ -122,11 +160,11 @@
         <option value="$PROJECT_DIR$/src/parse/ReadSimpleData.java" />
         <option value="$PROJECT_DIR$/src/matrix/MatrixTelemetry.java" />
         <option value="$PROJECT_DIR$/src/matrix/MatrixCompetent.java" />
-        <option value="$PROJECT_DIR$/src/form/Graph.java" />
         <option value="$PROJECT_DIR$/src/parse/ReadTelemetryData.java" />
         <option value="$PROJECT_DIR$/src/parse/ReadTmnData.java" />
         <option value="$PROJECT_DIR$/src/parse/ReadTxtData.java" />
         <option value="$PROJECT_DIR$/src/calculation/Main.java" />
+        <option value="$PROJECT_DIR$/src/form/Graph.java" />
       </list>
     </option>
   </component>
@@ -136,7 +174,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="156" />
     <option name="y" value="128" />
     <option name="width" value="768" />
@@ -174,7 +212,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -220,13 +258,78 @@
               <item name="ZetAlgorithm" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
+            <path>
+              <item name="ZetAlgorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="ZetAlgorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="jfxrt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZetAlgorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="jfxrt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="javafx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZetAlgorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="jfxrt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="javafx" type="462c0819:PsiDirectoryNode" />
+              <item name="scene" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZetAlgorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="jfxrt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="javafx" type="462c0819:PsiDirectoryNode" />
+              <item name="scene" type="462c0819:PsiDirectoryNode" />
+              <item name="shape" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZetAlgorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZetAlgorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZetAlgorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="awt" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZetAlgorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="awt" type="462c0819:PsiDirectoryNode" />
+              <item name="geom" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -447,7 +550,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -457,17 +561,17 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53480476" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1901528" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21028744" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21633889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08998302" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14770798" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -517,8 +621,20 @@
           <properties />
           <option name="timeStamp" value="52" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/calculation/Main.java</url>
+          <line>125</line>
+          <properties />
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/form/Graph.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="59" />
+      <option name="time" value="63" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -527,85 +643,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/calculation/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1921">
-          <caret line="113" column="47" lean-forward="false" selection-start-line="113" selection-start-column="47" selection-end-line="113" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getIndexOfDepricateCollum#0;class#Main#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/matrix/MatrixTelemetry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#980#981#0" expanded="true" />
-            <element signature="e#1006#1007#0" expanded="true" />
-            <element signature="method#getAverageX2Collum#0;class#MatrixTelemetry#0" expanded="false" />
-            <element signature="method#getAverageXYCollum#0;class#MatrixTelemetry#0" expanded="false" />
-            <element signature="method#getCompetentOfCollum#0;class#MatrixTelemetry#0" expanded="false" />
-            <element signature="method#getCompetentOfCollum#1;class#MatrixTelemetry#0" expanded="false" />
-            <element signature="method#getDespersionRow#0;class#MatrixTelemetry#0" expanded="false" />
-            <element signature="method#getAverageRow#0;class#MatrixTelemetry#0" expanded="false" />
-            <element signature="method#getAverageX2Row#0;class#MatrixTelemetry#0" expanded="false" />
-            <element signature="method#getAverageXYRow#0;class#MatrixTelemetry#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/matrix/MatrixCompetent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#setISkipJSkip#0;class#MatrixCompetent#0" expanded="false" />
-            <element signature="method#getMapOfCollumHints#0;class#MatrixCompetent#0" expanded="false" />
-            <element signature="method#getMapOfCollumHints#1;class#MatrixCompetent#0" expanded="false" />
-            <element signature="method#checkRow#0;class#MatrixCompetent#0" expanded="false" />
-            <element signature="method#getMapOfRowHints#0;class#MatrixCompetent#0" expanded="false" />
-            <element signature="method#getMapOfRowHints#1;class#MatrixCompetent#0" expanded="false" />
-            <element signature="method#findBeterDegreeRow#0;class#MatrixCompetent#0" expanded="false" />
-            <element signature="method#getPredictionOfJ#0;class#MatrixCompetent#0" expanded="false" />
-            <element signature="method#showMapOfMap#0;class#MatrixCompetent#0" expanded="false" />
-            <element signature="method#showMap#0;class#MatrixCompetent#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/matrix/Matrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3281">
-          <caret line="193" column="41" lean-forward="true" selection-start-line="193" selection-start-column="41" selection-end-line="193" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/matrix/MatrixCompetent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="41" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#setISkipJSkip#0;class#MatrixCompetent#0" expanded="false" />
-            <element signature="method#getMapOfCollumHints#0;class#MatrixCompetent#0" expanded="false" />
-            <element signature="method#getMapOfCollumHints#1;class#MatrixCompetent#0" expanded="false" />
-            <element signature="method#checkRow#0;class#MatrixCompetent#0" expanded="false" />
-            <element signature="method#getMapOfRowHints#0;class#MatrixCompetent#0" expanded="false" />
-            <element signature="method#getMapOfRowHints#1;class#MatrixCompetent#0" expanded="false" />
-            <element signature="method#findBeterDegreeRow#0;class#MatrixCompetent#0" expanded="false" />
-            <element signature="method#getPredictionOfJ#0;class#MatrixCompetent#0" expanded="false" />
-            <element signature="method#showMapOfMap#0;class#MatrixCompetent#0" expanded="false" />
-            <element signature="method#showMap#0;class#MatrixCompetent#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/matrix/MatrixTelemetry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -650,7 +687,6 @@
         <state relative-caret-position="204">
           <caret line="12" column="41" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="41" />
           <folding>
-            <element signature="imports" expanded="false" />
             <element signature="method#setISkipJSkip#0;class#MatrixCompetent#0" expanded="false" />
             <element signature="method#getMapOfCollumHints#0;class#MatrixCompetent#0" expanded="false" />
             <element signature="method#getMapOfCollumHints#1;class#MatrixCompetent#0" expanded="false" />
@@ -938,26 +974,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/matrix/MatrixTelemetry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="59" column="39" lean-forward="true" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#980#981#0" expanded="true" />
-            <element signature="e#1006#1007#0" expanded="true" />
-            <element signature="method#getAverageX2Collum#0;class#MatrixTelemetry#0" expanded="false" />
-            <element signature="method#getAverageXYCollum#0;class#MatrixTelemetry#0" expanded="false" />
-            <element signature="method#getCompetentOfCollum#0;class#MatrixTelemetry#0" expanded="false" />
-            <element signature="method#getCompetentOfCollum#1;class#MatrixTelemetry#0" expanded="false" />
-            <element signature="method#getDespersionRow#0;class#MatrixTelemetry#0" expanded="false" />
-            <element signature="method#getAverageRow#0;class#MatrixTelemetry#0" expanded="false" />
-            <element signature="method#getAverageX2Row#0;class#MatrixTelemetry#0" expanded="false" />
-            <element signature="method#getAverageXYRow#0;class#MatrixTelemetry#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/matrix/Matrix.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-167">
@@ -974,10 +990,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/parse/ReadTmnData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-500">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2247#2248#0" expanded="false" />
+            <element signature="e#2282#2283#0" expanded="false" />
+            <element signature="e#2327#2328#0" expanded="false" />
+            <element signature="e#2359#2360#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/matrix/MatrixCompetent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="405" column="0" lean-forward="true" selection-start-line="405" selection-start-column="0" selection-end-line="405" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="405" column="0" lean-forward="false" selection-start-line="405" selection-start-column="0" selection-end-line="405" selection-end-column="0" />
           <folding>
             <element signature="method#setISkipJSkip#0;class#MatrixCompetent#0" expanded="false" />
             <element signature="method#getMapOfCollumHints#0;class#MatrixCompetent#0" expanded="false" />
@@ -993,35 +1023,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/parse/ReadTmnData.java">
+    <entry file="file://$PROJECT_DIR$/src/matrix/MatrixTelemetry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-500">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="68">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2247#2248#0" expanded="true" />
-            <element signature="e#2282#2283#0" expanded="true" />
-            <element signature="e#2327#2328#0" expanded="true" />
-            <element signature="e#2359#2360#0" expanded="true" />
+            <element signature="e#980#981#0" expanded="true" />
+            <element signature="e#1006#1007#0" expanded="true" />
+            <element signature="method#getAverageX2Collum#0;class#MatrixTelemetry#0" expanded="false" />
+            <element signature="method#getAverageXYCollum#0;class#MatrixTelemetry#0" expanded="false" />
+            <element signature="method#getCompetentOfCollum#0;class#MatrixTelemetry#0" expanded="false" />
+            <element signature="method#getCompetentOfCollum#1;class#MatrixTelemetry#0" expanded="false" />
+            <element signature="method#getDespersionRow#0;class#MatrixTelemetry#0" expanded="false" />
+            <element signature="method#getAverageRow#0;class#MatrixTelemetry#0" expanded="false" />
+            <element signature="method#getAverageX2Row#0;class#MatrixTelemetry#0" expanded="false" />
+            <element signature="method#getAverageXYRow#0;class#MatrixTelemetry#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/form/Graph.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/awt/BorderLayout.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="21" column="40" lean-forward="false" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="40" />
+        <state relative-caret-position="-628">
+          <caret line="263" column="31" lean-forward="false" selection-start-line="263" selection-start-column="31" selection-end-line="263" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/awt/geom/Rectangle2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="42" column="22" lean-forward="false" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/shape/Circle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="56" column="13" lean-forward="false" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/awt/Shape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5402">
+          <caret line="77" column="17" lean-forward="false" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/awt/Rectangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7">
+          <caret line="118" column="35" lean-forward="true" selection-start-line="118" selection-start-column="35" selection-end-line="118" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/calculation/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        <state relative-caret-position="187">
+          <caret line="51" column="31" lean-forward="true" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getIndexOfDepricateCollum#0;class#Main#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/form/Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="96" column="58" lean-forward="true" selection-start-line="96" selection-start-column="58" selection-end-line="96" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6240#6241#0" expanded="true" />
+            <element signature="e#6300#6301#0" expanded="true" />
           </folding>
         </state>
       </provider>

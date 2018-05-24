@@ -1,5 +1,6 @@
 package form;
 
+import javafx.scene.shape.Circle;
 import matrix.MatrixTelemetry;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
@@ -7,10 +8,20 @@ import org.jfree.chart.JFreeChart;
 import org.jfree.chart.axis.NumberAxis;
 import org.jfree.chart.plot.CategoryPlot;
 import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.chart.plot.XYPlot;
 import org.jfree.chart.renderer.category.LineAndShapeRenderer;
+import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
+import org.jfree.chart.renderer.xy.XYSplineRenderer;
 import org.jfree.data.category.DefaultCategoryDataset;
+import org.jfree.data.xy.XYDataset;
+import org.jfree.data.xy.XYSeries;
+import org.jfree.data.xy.XYSeriesCollection;
+import org.jfree.ui.RectangleInsets;
+import org.jfree.util.ShapeUtilities;
 
 import java.awt.*;
+import java.awt.geom.Area;
+import java.awt.geom.Ellipse2D;
 
 /**
  *
@@ -47,20 +58,67 @@ public class Graph extends javax.swing.JFrame {
     }
 
     //  функция для рисования графика (передача набора данных для графика, названия графика, количества линий на графике)
-    private void draw(DefaultCategoryDataset dataset, String name, int nRow) {
-        JFreeChart chart = ChartFactory.createLineChart(name,
+    //DefaultCategoryDataset
+    //XYDataset
+    private void draw(XYDataset dataset, String name, int nRow) {
+
+
+        //createLineChart  //createXYLineChart
+        final JFreeChart chart = ChartFactory.createXYLineChart(name,
                 "Number", "Value", dataset, PlotOrientation.VERTICAL, true, true, false);       //  построение линейного графика
         chart.setBackgroundPaint(Color.white);
-        final CategoryPlot plot = (CategoryPlot) chart.getPlot();       //  добавление сетки графика
+
+        //final CategoryPlot plot = (CategoryPlot) chart.getPlot();       //  добавление сетки графика
+        final XYPlot plot = chart.getXYPlot();
+
         plot.setBackgroundPaint(Color.lightGray);
         plot.setRangeGridlinePaint(Color.white);
+
+
         final NumberAxis rangeAxis = (NumberAxis) plot.getRangeAxis();      //  указание осей графика
         rangeAxis.setStandardTickUnits(NumberAxis.createIntegerTickUnits());
         rangeAxis.setAutoRangeIncludesZero(true);
-        final LineAndShapeRenderer renderer = (LineAndShapeRenderer) plot.getRenderer();        //  рендеринг графика (необходимо для изменения толщины линий)
-        for (int i = 0; i < nRow; i++) {
-            renderer.setSeriesStroke(i, new BasicStroke(4.0f));     //  задание толщины линий на графике
-        }
+
+        //final LineAndShapeRenderer renderer = (LineAndShapeRenderer) plot.getRenderer();        //  рендеринг графика (необходимо для изменения толщины линий)
+        XYLineAndShapeRenderer renderer = (XYLineAndShapeRenderer) plot.getRenderer();
+        // XYSplineRenderer renderer = (XYSplineRenderer) plot.getRenderer();
+
+//        for (int i = 0; i < nRow; i++) {
+//            renderer.setSeriesStroke(i, new BasicStroke(4.0f));     //  задание толщины линий на графике
+//        }
+
+
+        /* сглаживание
+        XYSplineRenderer r1 = new XYSplineRenderer();
+        r1.setPrecision(2);
+        plot.setRenderer(0,r1); */
+
+
+        renderer.setSeriesStroke (1, new BasicStroke(4f));
+        Rectangle rect = new Rectangle(6, 6);
+        renderer.setSeriesShape(1, rect);
+        //renderer.setSeriesShapesVisible(1, true);
+
+        Shape circle =  new Ellipse2D.Double(0, 0, 1, 1);
+        renderer.setSeriesShape(0, circle);
+        //renderer.setSeriesShapesVisible(0, true);
+        renderer.setSeriesStroke(
+                0, new BasicStroke(1.5f, BasicStroke.CAP_ROUND,
+                        BasicStroke.JOIN_ROUND,
+                        1.0f, new float[] {20.0f, 10.0f}, 0.0f)
+        );
+
+//         renderer.setSeriesPaint  (0, Color.blue);
+//         renderer.setSeriesPaint  (1, Color.red);
+
+
+
+        /*
+        XYSplineRenderer r1 = new XYSplineRenderer();
+        r1.setPrecision(8);
+        r1.setSeriesShapesVisible (0, false);
+        plot.setRenderer(0, r1);*/
+
 
         //  передача полученного графика на существующую панель на форме
         ChartPanel chartPanel = new ChartPanel(chart);
@@ -140,12 +198,28 @@ public class Graph extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         String caption = comboBox.getSelectedItem().toString();     //  взятие выбранного caption
         int col = comboBox.getSelectedIndex();      //  взятие индекса выбранного caption
-        DefaultCategoryDataset dataset = new DefaultCategoryDataset();      //  переменная для данных (позже передадим для отображения на графике)
+
+        //DefaultCategoryDataset dataset = new DefaultCategoryDataset();      //  переменная для данных (позже передадим для отображения на графике)
+
+
+        XYSeriesCollection dataset = new XYSeriesCollection();
+        final XYSeries series1 = new XYSeries("initial");
+        final XYSeries series2 = new XYSeries("result");
+
         for (int i = 0; i < startMatrix.M; i++) {
-            if (mapOfStartMatrix.get(i,col)!=1) dataset.addValue(startMatrix.get(i, col), "initial", "" + (i + 1));     //  добавление данных в график (начальная матрица)
+           /* if (mapOfStartMatrix.get(i,col)!=1) dataset.addValue(startMatrix.get(i, col), "initial", "" + (i + 1));     //  добавление данных в график (начальная матрица)
             else dataset.addValue(0, "initial", "" + (i + 1)); //22.05.2018 если
             dataset.addValue(resultMatrix.get(i, col), "result", "" + (i + 1));     //  добавление данных в график (конечная матрица)
+
+            */
+            if (mapOfStartMatrix.get(i,col)!=1) series1.add((i + 1),startMatrix.get(i, col));
+            else series1.add((i + 1),0);
+            series2.add((i + 1),resultMatrix.get(i, col));
         }
+
+        dataset.addSeries(series1);
+        dataset.addSeries(series2);
+
         draw(dataset, "Analyze for column: " + caption, startMatrix.M);     //  вызов функции рисования и отображения графика на форме
     }
 
