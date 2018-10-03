@@ -45,7 +45,6 @@ public class MatrixTelemetry extends Matrix {
         }
     }
 
-    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!ПРОВЕРЕНО!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     //нормализует матрицу по дисперсии с учетом пропусков
     //над элементами с пропусками вычисления не производятся
     public  void normalizeByDispersion(Matrix map){
@@ -74,7 +73,6 @@ public class MatrixTelemetry extends Matrix {
     /************************************         Для столбцов  ******************************************************/
     /*****************************************************************************************************************/
 
-    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!ПРОВЕРЕНО!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     //возвращает дисперсию j-ого столбца, учитывая пропуски
     //над элементами с пропусками вычисления не производятся
     public double getDespersionCollum(Matrix map, int j){
@@ -89,7 +87,6 @@ public class MatrixTelemetry extends Matrix {
         return BigDecimal.valueOf(sum/(M-miss)).setScale(20,BigDecimal.ROUND_HALF_DOWN).doubleValue();
     }
 
-    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!ПРОВЕРЕНО!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     // возвращает среднее по столбцу учитывая пропуски
     //над элементами с пропусками вычисления не производятся
     public double getAverageCollum(Matrix map, int j){
@@ -102,7 +99,6 @@ public class MatrixTelemetry extends Matrix {
         return BigDecimal.valueOf(sum/(M-miss)).setScale(20,BigDecimal.ROUND_HALF_DOWN).doubleValue();
     }
 
-    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!ПРОВЕРЕНО!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     // возвращает среднее по столбцу значение квадрата элемента
     public  double getAverageX2Collum(Matrix map, int j){
         double sum=0, miss=0;
@@ -113,7 +109,6 @@ public class MatrixTelemetry extends Matrix {
         return sum/(M-miss);
     }
 
-    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!ПРОВЕРЕНО!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     //возвращает среднее произведение элементов из указанных столбцов
     public  double getAverageXYCollum(Matrix map, int jCollum, int jSkip){
         double sum=0, miss=0;
@@ -124,7 +119,6 @@ public class MatrixTelemetry extends Matrix {
         return sum/(M-miss);
     }
 
-    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!ПРОВЕРЕНО!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     /* Возвращает компетентность указанного j столбца относительно jSkip столбца
       L(jk)=correlation*t(jk)   ; j меняется, jSkip постоянно для одного пропуска
       (вичисляет корреляцию по Пирсону с учетом пропусков)                      */
@@ -153,7 +147,6 @@ public class MatrixTelemetry extends Matrix {
         return correlation*numberOfKnownProperties;
     }
 
-    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!ПРОВЕРЕНО!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     // перегруженный для удобства метод
     public Map<Integer,Double> getCompetentOfCollum(MatrixCompetent map, int jSkip){
         Map<Integer,Double> mapOfCollumCompetents = new LinkedHashMap<>();
@@ -167,7 +160,6 @@ public class MatrixTelemetry extends Matrix {
     }
     /*************************         Для строк   *****************************************************************/
 
-    // !!!!!!!!!!!!!!! ПРОВЕРЕНО!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
      /* возвращает компетентность строки iRow относительно строки с пропуском iSkip
        L(il)=t(il)/evclid ; evclid = sqrt(SUM(xi-yi)^2)
        над элементами с пропусками вычисления не производятся     */
@@ -196,7 +188,6 @@ public class MatrixTelemetry extends Matrix {
         return sum / (N-miss);
     }
 
-    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!ПРОВЕРЕНО!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     // возвращает среднее значение элементов указанной строки (учитывая пропуски)
     public double getAverageRow(Matrix map, int i){
         double sum=0,miss=0;
@@ -208,7 +199,6 @@ public class MatrixTelemetry extends Matrix {
         return sum/(N-miss);
     }
 
-    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!ПРОВЕРЕНО!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     // возвращает среднее значение квадрата элемента указанной строки
     public  double getAverageX2Row(Matrix map, int i){
         double sum=0, miss=0;
@@ -219,7 +209,6 @@ public class MatrixTelemetry extends Matrix {
         return sum/(N-miss);
     }
 
-    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!ПРОВЕРЕНО!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     //возвращает среднее значение произведения элементов из указанных строк
     public  double getAverageXYRow(Matrix map, int iCollum, int iSkip){
         double sum=0, miss=0;
@@ -229,8 +218,6 @@ public class MatrixTelemetry extends Matrix {
         }
         return sum/(N-miss);
     }
-
-
 
     public  Map<Integer,Double> getCompetentOfRow(Matrix map, int iSkip){
         Map<Integer,Double> mapOfRowsCompetents = new LinkedHashMap<>();
